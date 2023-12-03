@@ -14,8 +14,4 @@ class Terminal:
         print("Output from terminal command: " + out)
         return (image, )
 
-    CATEGORY = "Tools"
-
-NODE_CLASS_MAPPINGS = {
-    "Terminal": Terminal
-}
+    CATEGORY = "Terminal"
