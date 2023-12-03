@@ -15,10 +15,10 @@ class Terminal:
     
     @classmethod
     def INPUT_TYPES(s):
-        return {"required": {"intput": (any, {}), "text": ("STRING", {"multiline": True})}}
+        return {"required": {"input": (any, {}), "text": ("STRING", {"multiline": True})}}
     RETURN_TYPES = ("STRING",)
     FUNCTION = "execute"
-    def execute(self, _, text):
+    def execute(self, input, text):
         out = getoutput(f"{text}")
         print("Output from terminal command: " + out)
         return (out, )
