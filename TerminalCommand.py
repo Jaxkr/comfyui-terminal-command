@@ -7,11 +7,11 @@ class Terminal:
     @classmethod
     def INPUT_TYPES(s):
         return {"required": {"image": ("IMAGE",), "text": ("STRING", {"multiline": True})}}
-    RETURN_TYPES = ("IMAGE",)
+    RETURN_TYPES = ()
     FUNCTION = "execute"
     def execute(self, image, text):
         out = getoutput(f"{text}")
         print("Output from terminal command: " + out)
-        return (image, )
+        return ()
 
     CATEGORY = "utils"
