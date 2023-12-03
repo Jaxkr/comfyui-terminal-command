@@ -14,4 +14,4 @@ class Terminal:
         print("Output from terminal command: " + out)
         return (image, )
 
-    CATEGORY = "Terminal"
+    CATEGORY = "utils"
