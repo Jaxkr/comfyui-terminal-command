@@ -16,7 +16,7 @@ class Terminal:
     @classmethod
     def INPUT_TYPES(s):
         return {"required": {"intput": (any, {}), "text": ("STRING", {"multiline": True})}}
-    RETURN_TYPES = ("STRING")
+    RETURN_TYPES = ("STRING",)
     FUNCTION = "execute"
     def execute(self, _, text):
         out = getoutput(f"{text}")
